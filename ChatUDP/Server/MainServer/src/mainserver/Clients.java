@@ -17,13 +17,13 @@ public class Clients {
     InetAddress indirizzo;
     String ip = "localhost";
 
-      public Clients(InetAddress addr, int port) throws UnknownHostException {
-        this.porta = port;
-        addr = InetAddress.getByName(ip);
+      public Clients(InetAddress indirizzo, int porta) throws UnknownHostException {
+        this.porta = porta;
+        indirizzo = InetAddress.getByName(ip);
     }
       
-       Clients(int port) {
-        this.porta = port;
+       Clients(int porta) {
+        this.porta = porta;
     }
 }
 
