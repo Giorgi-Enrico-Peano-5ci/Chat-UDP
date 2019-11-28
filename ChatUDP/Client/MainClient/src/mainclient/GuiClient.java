@@ -139,7 +139,7 @@ public class GuiClient extends JFrame implements ActionListener {
                 String username1 = Area2.getText();
                 String messaggio = message + " & " + username1;
                 buffer = messaggio.getBytes();
-                DatagramPacket sendpack = new DatagramPacket(buffer, buffer.length, InetAddress.getLoopbackAddress(), 9999);
+                DatagramPacket sendpack = new DatagramPacket(buffer, buffer.length, InetAddress.getLoopbackAddress(), 7676);
                 client.send(sendpack);
                 panel.append("l'utente e' " + username1 + " ed il messaggio e' : " + message );
                 
